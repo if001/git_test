@@ -15,13 +15,6 @@ class Document():
     def add_body(self, st):
         self.body.append(st)
 
-
-class Printer():
-    @classmethod
-    def print_body(cls, body):
-        for value in body:
-            print(value)
-
 def main():
     md = Document(MarkDown, "md")
     md.add_body("よい天気ですね!")
