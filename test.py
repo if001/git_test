@@ -13,7 +13,6 @@ class Html():
         print(head)
         print("</head>")
 
-
     def print_body(self, body):
         print("<body>")
         print(body)
@@ -30,12 +29,28 @@ class MarkDown():
         print(body)
         print("</body>")
 
+class Report():
+    def print_head(self, head):
+        print("-- head -----------------------")
+        print(head)
+        print("-- head -----------------------")
+
+    def print_body(self, body):
+        print("== body =========")
+        print(body)
+        print("== body =========")
+
+
+
 def main():
     md = Document(MarkDown, "md")
     md.print_doc("よい天気ですね!")
     print("-----------------")
     html = Document(Html, "html")
     html.print_doc("よい天気ですね!")
+    print("-----------------")
+    rep = Document(Report, "report")
+    rep.print_doc("よい天気ですね!")
 
 if __name__ == '__main__':
     main()
