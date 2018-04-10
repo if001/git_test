@@ -1,6 +1,8 @@
 from html import Html
 from markdown import MarkDown
 from report import Report
+from report2 import Report2
+from report3 import Report3
 
 class Document():
     def __init__(self, printer):
@@ -36,6 +38,13 @@ def main():
     rep.add_body("これはレポートです")
     rep.add_body("今日も良い天気でした。")
     rep.print_doc()
+    print()
+    print()
+    rep2 = Document(Report2)
+    rep2.add_head("たいとる")
+    rep2.add_body("これはレポートです")
+    rep2.add_body("今日も良い天気でした。")
+    rep2.print_doc()
 
 if __name__ == '__main__':
     main()
