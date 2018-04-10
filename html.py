@@ -1,5 +1,3 @@
-from printer import Printer
-
 class Html():
     def print_head(self, head):
         print("<head>")
@@ -8,5 +6,5 @@ class Html():
 
     def print_body(self, body):
         print("<body>")
-        Printer.print_body(body)
+        print(body)
         print("</body>")
