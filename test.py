@@ -1,3 +1,7 @@
+from html import Html
+from markdown import MarkDown
+from report import Report
+
 class Document():
     def __init__(self, printer, head):
         self.head = head
@@ -6,41 +10,6 @@ class Document():
     def print_doc(self, body):
         self.printer.print_head(self.head)
         self.printer.print_body(body)
-
-class Html():
-    def print_head(self, head):
-        print("<head>")
-        print(head)
-        print("</head>")
-
-    def print_body(self, body):
-        print("<body>")
-        print(body)
-        print("</body>")
-
-class MarkDown():
-    def print_head(self, head):
-        print("<head>")
-        print(head)
-        print("</head>")
-
-    def print_body(self, body):
-        print("<body>")
-        print(body)
-        print("</body>")
-
-class Report():
-    def print_head(self, head):
-        print("-- head -----------------------")
-        print(head)
-        print("-- head -----------------------")
-
-    def print_body(self, body):
-        print("== body =========")
-        print(body)
-        print("== body =========")
-
-
 
 def main():
     md = Document(MarkDown, "md")
