@@ -45,10 +45,12 @@ class Report():
 def main():
     md = Document(MarkDown, "md")
     md.print_doc("よい天気ですね!")
-    print("-----------------")
+    print()
+    print()
     html = Document(Html, "html")
     html.print_doc("よい天気ですね!")
-    print("-----------------")
+    print()
+    print()
     rep = Document(Report, "report")
     rep.print_doc("よい天気ですね!")
 
