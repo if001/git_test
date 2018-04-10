@@ -1,10 +1,16 @@
 
-def hoge():
-    print("hoge")
+class Hoge():
+    @classmethod
+    def hoge():
+        print("hoge")
+
+    @classmethod
+    def call():
+        print("hello")
 
 
 def main():
-    hoge()
+    Hoge.hoge()
 
 
 if __name__ == '__main__':
